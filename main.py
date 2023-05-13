@@ -26,7 +26,7 @@ class Dice(Widget):
         self.img_rect.pos = self.pos
 
     def images(self):
-        rolls = ["ca.png", "tom.png", "cua.png", "ga.png", "bau.png", "deer.png"]
+        rolls = ["./images/ca.png", "./images/tom.png", "./images/cua.png", "./images/ga.png", "./images/bau.png", "./images/deer.png"]
         return random.choice(rolls)
     
     def update_image(self):
@@ -57,7 +57,7 @@ class DiceApp(BoxLayout):
 
 class BauCua(App):
     def build(self):
-        return DiceApp(orientation='vertical', spacing = 10, padding=10)
+        return DiceApp(orientation='vertical', spacing = 10, padding=10) 
     
 def main():
     BauCua().run()
